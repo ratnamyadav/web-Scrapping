@@ -27,5 +27,6 @@ class ApplicationController < ActionController::Base
     page.form['GenderID'] =  params[:GenderID]
     page.form['County'] =  params[:County]
     page.form.submit
+    render json: {successfull: true}
   end
 end
